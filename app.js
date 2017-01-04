@@ -1,3 +1,15 @@
+
+/*  Remove this from your final submission
+function printAllToConsole(dataObj){
+	for (var key in dataObj) {
+		if (dataObj.hasOwnProperty(key)) {
+			console.log(key + " -> " + JSON.stringify(dataObj[key]));
+		}
+	}
+}
+printAllToConsole(data);
+*/
+
 function initSearch(people){
 	alert("welcome to Most Wanted.follow the prompts to find who your looking for.");
 	do{
@@ -5,7 +17,7 @@ function initSearch(people){
 	}while (!(searchType =="name" || searchType =="attributes"));
 	switch(searchType){
 		case"name"
-		var Person = getPerson(prompt("Enter person's first name"), prompt("Enter person's last name."), people);
+		var person = getPerson(prompt("Enter person's first name"), prompt("Enter person's last name."), people);
 		mainMenu(person,people);
 		break;
 		case "attributes"
@@ -34,7 +46,7 @@ function initSearch(people){
 		alert("could not find that person");
 		return initSearch(people);
 		}
-		var displayOption = prompt("found" + person.firstname + "" + person.lastname + "do you want to know their 'info' 'family , 'next of kin', or 'Descendants'? type the option you want or 'restart' , or 'quit' ")
+		var displayOption = prompt("found" + person.firstname + "" + person.lastname +"do you want to know their 'info' 'family , 'next of kin', or 'Descendants'? type the option you want or 'restart' , or 'quit' ")
 		
 
 	switch
