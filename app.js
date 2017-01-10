@@ -1,4 +1,3 @@
-
 /*  Remove this from your final submission
 function printAllToConsole(dataObj){
     for (var key in dataObj) {
@@ -92,13 +91,15 @@ function mainMenu(person, people) {
             break;
 
             case "descendants":
-            var descendants = getDescendants(person, people);
 
+            var descendants = getDescendants(person, people);
+             var message = "Descendants:"
             for(var i = 0; i < descendants.length; i++){
 
-                alert("Descendants: " + descendants[i].firstName + " " + descendants[i].lastName);
-
+                message += "\n"  + descendants[i].firstName + " " + descendants[i].lastName+ "";
+            
             }
+            alert(message)
             mainMenu(person, people);
             break;
 
@@ -125,6 +126,8 @@ function getPerson(firstname, lastname, people){
        var person = people.filter(person => person.firstName === firstname && person.lastName === lastname);
        return person[0];
 }
+
+
 function getInfo(person,people){
     alert("Name: " +person.firstName + " " +person.lastName + "\nGender: " +person.gender+
 
@@ -136,6 +139,8 @@ function getInfo(person,people){
 
     mainMenu(person, people);
 }
+
+
 function getnextOfkin(person, people){
 
 
@@ -144,18 +149,19 @@ function getnextOfkin(person, people){
 
 
 function displayFamily(person, people){
-    if (!person.currentSpouse)
+
+   /* if (!person.currentSpouse)
+
         alert("No spouse found")
+
     var spouse= getPersonId(person.currentSpouse, people);
+
     alert("Spouse:" + " " + spouse.firstName + " " + spouse.lastName);
-    
+    mainMenu(person, people);*/
 
-
-    mainMenu(person, people);
-
+    var parent = getParents(person, people);
             
 }
-
 
 
 
@@ -183,6 +189,29 @@ function getDescendants(parent, people){
     return kids;
 } 
 
+function nextOfKin(person, people){
+       
+    
+}
+
+
+
+
+
+
+function getParents(person, people){
+    return people.filter(function(p){
+        if ((person.id == person.parents[0] &&person.id) || person.id == person.parents[1].id){
+            return true;
+        } else{
+            return false;
+        }
+})};
+
+
+
+
+
 function getPersonId(id, people){
  var personid = people.filter(function(person){
     return (person.id === id);
@@ -191,3 +220,7 @@ function getPersonId(id, people){
 }
 
 
+
+function searchAttributes(person, people){
+
+}
