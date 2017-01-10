@@ -157,7 +157,6 @@ function displayFamily(person, people) {
     
 
     var parent = getParents(person, people);
-    
     var kids= getKids(person,people)
 
 }
@@ -167,7 +166,25 @@ function displayFamily(person, people) {
 function getDescendants(parent, people) {
 
 
-    
+    var kids = people.filter(function (person) {
+
+        if (person.parents[0] == parent.id) {
+
+            return true;
+
+        } else if (person.parents[1] == parent.id) {
+
+            return true;
+
+        } else {
+
+            return false;
+
+        }
+
+    });
+
+    return kids;
 }
 
 function nextOfKin(person, people) {
