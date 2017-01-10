@@ -37,13 +37,13 @@ function initMostwanted(people) {
 
 
 
-                var Height = prompt("Approximately how tall is this person? (In INCHES)");
+                var Height = prompt("How tall is this person? (In INCHES)");
 
                 // (Inches, FT, In)
 
 
 
-                var Weight = prompt("About how much does this person weigh? (In LBS)");
+                var Weight = prompt("How much does this person weigh? (In LBS)");
 
 
 
@@ -51,25 +51,16 @@ function initMostwanted(people) {
 
                 var EyeColor = prompt("What is their eye color? Options: Brown, Blue, Hazel, Green or Black");
 
-            }while(!(EyeColor == "Brown" || EyeColor == "Blue" || EyeColor == "Hazel" || EyeColor == "Green" || EyeColor == "Black"));
+            }while(!(EyeColor == "Brown" || EyeColor == "Blue" || EyeColor == "Hazel" || EyeColor == "Green" == "Black"));
 
 
 
-                var Occupation = prompt("What is their line of work? (EX: Nurse)");
+                var Occupation = prompt("What do they do? (EX: Nurse)");
 
-                mainMenu(person, people)
+                mainMenu(person, people);
         break;
     }
 }
-
-
-
-
-
-
-
-
-
 
 function mainMenu(person, people) {
     if (!person){
@@ -80,30 +71,35 @@ function mainMenu(person, people) {
 
 
 
-    var displayOption = prompt("Found " +  person.firstName  +  person.lastName  + "Would you like to search 'info', 'family',  'descendants', or 'next of kin'?, otherwise enter 'exit' or 'restart'.");
+    var displayOption = prompt("Found " + person.firstName  +   person.lastName  +  "\nWould you like to search thier 'info', 'family',  'descendants', or 'next of kin'?, otherwise enter 'exit' or 'restart'.");
         
     switch (displayOption){
 
         case "family":
-        getFamily(person, people);
+        displayFamily(person, people);
+
 
             break;
            
            case "info":
             getInfo(person, people);
 
-            break;
+            break;     
             
-            
-
             case "next of kin":
             getnextOfKin(person, people);
 
             break;
 
-
             case "descendants":
-            getDescendants(person, people);
+            var descendants = getDescendants(person, people);
+
+            for(var i = 0; i < descendants.length; i++){
+
+                alert("Descendants: " + descendants[i].firstName + " " + descendants[i].lastName);
+
+            }
+            mainMenu(person, people);
             break;
 
 
@@ -140,16 +136,58 @@ function getInfo(person,people){
 
     mainMenu(person, people);
 }
+function getnextOfkin(person, people){
 
- 
-function getFamily(person, people){
-            var spouse = getPersonById(person.currentSpouse, people);
 
-            var personParents = getPersonById(person.parents[0], people);
-
-            var personFamily =alert("Parents:" + " " + personParents.firstName + " " + personParents.lastName + "\n" + "Spouse:" + " " + spouse.firstName + " " + spouse.lastName);
-            mainMenu(person, people)
 }
-function getparents(person, people){
-  
+
+
+
+function displayFamily(person, people){
+    if (!person.currentSpouse)
+        alert("No spouse found")
+    var spouse= getPersonId(person.currentSpouse, people);
+    alert("Spouse:" + " " + spouse.firstName + " " + spouse.lastName);
+    
+
+
+    mainMenu(person, people);
+
+            
 }
+
+
+
+
+function getDescendants(parent, people){
+
+
+    var kids = people.filter(function(person) {
+
+        if(person.parents[0] == parent.id){
+
+            return true;
+
+        } else if(person.parents[1] == parent.id){
+
+            return true;
+
+        } else {
+
+            return false;
+
+        }
+
+    });
+
+    return kids;
+} 
+
+function getPersonId(id, people){
+ var personid = people.filter(function(person){
+    return (person.id === id);
+ });
+ return personid[0]
+}
+
+
