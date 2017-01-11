@@ -1,25 +1,3 @@
-/*  Remove this from your final submission
-
-function printAllToConsole(dataObj){
-
-    for (var key in dataObj) {
-
-        if (dataObj.hasOwnProperty(key)) {
-
-            console.log(key + " -> " + JSON.stringify(dataObj[key]));
-
-        }
-
-    }
-
-}
-
-printAllToConsole(data);
-
-*/
-
-
-
 function initMostwanted(people) {
 
     alert("Welcome to Most Wanted. Follow the prompts to find who you're looking for.");
@@ -82,8 +60,7 @@ function mainMenu(person, people) {
     switch (displayOption) {
         case "family":
                        
-            var kid = getKids(person, people);
-            var spouse =getspouse(person.currenySpouse, people)
+
             displayFamily(person, people);
             mainMenu(person, people)
 
@@ -149,51 +126,104 @@ function getInfo(person, people) {
 }
 
 function displayFamily(person, people) {
-            var kids = getKids(person, people);
-            var message = "kids:"
-            for (var i = 0; i < kids.length; i++) {
-            message += "\n" + kids[i].firstName + " " + kids[i].lastName + "";}
-            alert(message)
+        var parents = getParents(person.parents, people);
+        var spouse = getSpouse(person.currentSpouse, people);
+        var kids = getKids(person, people);
+       // var siblings = getSiblings(person, people);
+
+
+
+    alert("\nParent(s): " + parents + "\nSpouse: " + spouse + "\nKid(s): " + kids);
+
+    mainMenu(person, people);
+
+
 }    
-function getspouse(spouseId, people){
 
-    var spouseId = people.filter(function (person) {
 
-        return (person.id === spouseId);
+
+
+
+
+function getParents(parentsId, people){
+
+
+} 
+
+
+
+
+
+function getSpouse(spouseId, people){
+
+    var spouseById = people.filter(function(person){
+
+            return (person.id === spouseId);
 
     });
 
-    if(spouseId[0]){
-        return spouseId[0].firstName+ ""+spouseId[1].lastName;
+    if(spouseById[0]){
+
+        return spouseById[0].firstName +" "+ spouseById[0].lastName;
 
     }else{
+
+        return "None";
+
+    }
+
+}
+
+
+
+
+
+function getKids(parent, people){
+
+    var kids = people.filter(function(person){
+
+        for(var i =0; i <person.parents.length; i++){
+
+            if(parent.id == person.parents[i]){
+
+                return true;
+
+            };
+
+        }
+
+        return false;
+
+    });
+
+
+
+    if(kids.length == 4){
+
+        return kids[0].firstName +" "+ kids[0].lastName + ", " + kids[1].firstName +" "+ kids[1].lastName +
+
+        ", " + kids[2].firstName +" "+ kids[2].lastName + ", and " + kids[3].firstName +" "+ kids[3].lastName;
+
+    }else if(kids.length == 3){
+
+        return kids[0].firstName +" "+ kids[0].lastName + ", " + kids[1].firstName +" "+ kids[1].lastName +
+
+        ", and " + kids[2].firstName +" "+ kids[2].lastName;
+
+    }else if(kids.length == 2){
+
+        return kids[0].firstName +" "+ kids[0].lastName + " and " + kids[1].firstName +" "+ kids[1].lastName;
+
+    }else if(kids.length == 1){
+
+        return kids[0].firstName +" "+ kids[0].lastName;
+
+    }else{
+
         return "None"
 
     }
-}
-function getnextOfkin(person, people) {
 
-}
-
-
-
-
-function getKids(parent, people) {
-
-
-     var kids = people.filter(function (person) {
-        if (person.parents[0] == parent.id) {
-         return true;
-        } else if (person.parents[1] == parent.id) {
-           return true;
-        } else {
-            return false;
-        }
-    });
-    return kids;
-
-
-mainMenu(person, people)
 }
 
 
@@ -211,4 +241,7 @@ function getPersonId(id, people) {
     });
 
     return personid[0]
+}
+function nextOfkin (person, people){
+
 }
