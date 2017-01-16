@@ -30,7 +30,7 @@ function mainMenu(person, people) {
     var displayOption = prompt("Found"  +  person.firstName  +  person.lastName + "\nWould you like to search thier 'info', 'family',  'descendants', or 'next of kin'?, otherwise enter 'exit' or 'restart'.");
     switch (displayOption) {
         case "family":
-            displayFamily(person, people);
+            getFamily(person, people);
             mainMenu(person, people);
             break;
 
@@ -58,6 +58,11 @@ function mainMenu(person, people) {
                break;
         case "exit":
         return;
+        default:
+
+			alert("There was an error processing your request.");
+
+			return mainMenu(person, people);
 
     }
 
@@ -88,16 +93,17 @@ function getFamily(person, people) {
   for(var i = 0; i < person.parents.length; i++){
       var parent = getPerson(person.parents[i],people);
       parents.push(parent);
-  }
-var spouse = getPerson(person.currentSpouse, people);
-if(!spouse){
-  spouse = {"firstName": "None", "lastname" : ""};
+      return parents;
+        }
+      }
+      function getSpouse(person, people) {
+        var spouse = getPerson(person.currentSpouse, people);
+        if(!spouse){
+var partner = {"firstName": "None", "lastname" : ""};
 	}else{
   mainMenu(person, people);
   displayFamily(person, people);
 		return "None";
-
-
 }
 }
 
@@ -118,7 +124,5 @@ function getdescendants(people,person){
 }
 
 
-function displayFamily(people,person){
-	alert("-The " +person.lastName+ " Family- \nParent(s): " + parent + "\nSpouse: " + spouse + "\nKid(s): " + kids);
-
-}
+//function displayFamily(people,person){}
+//alert("-The " +person.lastName+ " Family- \nParent(s): " + parent + "\nSpouse: " + spouse + "\nKid(s): " + kids);
