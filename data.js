@@ -2,53 +2,42 @@ var data = [
 
 	{
 
-		"id": 272822514,
-
-	  "firstName": "Billy",
-
-	  "lastName": "Bob",
-
-	  "gender": "male",
-
-	  "dob": "1/18/1949",
-
-	  "height": 71,
-
-	  "weight": 175,
-
-	  "eyeColor": "brown",
-
-	  "occupation": "programmer",
-
-	  "parents": [],
-
-	  "currentSpouse": 401222887
+"id": 272822514,
+"firstName": "Billy",
+"lastName": "Bob",
+"gender": "male",
+"dob": "1/18/1949",
+"height": 71,
+"weight": 175,
+"eyeColor": "brown",
+"occupation": "programmer",
+"parents": [],
+"currentSpouse": 401222887
 
 	},
 
 	{
 
-		"id": 401222887,
+"id": 401222887,
 
-	  "firstName": "Uma",
+"firstName": "Uma",
 
-	  "lastName": "Bob",
+"lastName": "Bob",
 
-	  "gender": "female",
+"gender": "female",
 
-	  "dob": "4/1/1947",
+"dob": "4/1/1947",
 
-	  "height": 65,
+"height": 65,
 
-	  "weight": 162,
+"weight": 162,
 
-	  "eyeColor": "brown",
+"eyeColor": "brown",
+"occupation": "assistant",
 
-	  "occupation": "assistant",
+"parents": [],
 
-	  "parents": [],
-
-	  "currentSpouse": 272822514
+"currentSpouse": 272822514
 
 	},
 
@@ -56,25 +45,25 @@ var data = [
 
 		"id": 409574486,
 
-	  "firstName": "Michael",
+"firstName": "Michael",
 
-	  "lastName": "Walkens",
+"lastName": "Walkens",
 
-	  "gender": "male",
+"gender": "male",
 
-	  "dob": "5/9/1951",
+"dob": "5/9/1951",
 
-	  "height": 76,
+"height": 76,
 
-	  "weight": 250,
+"weight": 250,
 
-	  "eyeColor": "brown",
+"eyeColor": "brown",
 
-	  "occupation": "landscaper",
+"occupation": "landscaper",
 
-	  "parents": [],
+"parents": [],
 
-	  "currentSpouse": 260451248
+"currentSpouse": 260451248
 
 	},
 
@@ -82,25 +71,25 @@ var data = [
 
 		"id": 260451248,
 
-	  "firstName": "Jon",
+"firstName": "Jon",
 
-	  "lastName": "Walkens",
+"lastName": "Walkens",
 
-	  "gender": "male",
+"gender": "male",
 
-	  "dob": "9/6/1945",
+"dob": "9/6/1945",
 
-	  "height": 62,
+"height": 62,
 
-	  "weight": 115,
+"weight": 115,
 
-	  "eyeColor": "brown",
+"eyeColor": "brown",
 
-	  "occupation": "assistant",
+"occupation": "assistant",
 
-	  "parents": [],
+"parents": [],
 
-	  "currentSpouse": 409574486
+"currentSpouse": 409574486
 
 	},
 
@@ -108,25 +97,25 @@ var data = [
 
 		"id": 629807187,
 
-	  "firstName": "Jack",
+"firstName": "Jack",
 
-	  "lastName": "Pafoy",
+"lastName": "Pafoy",
 
-	  "gender": "male",
+"gender": "male",
 
-	  "dob": "3/16/1938",
+"dob": "3/16/1938",
 
-	  "height": 70,
+"height": 70,
 
-	  "weight": 207,
+"weight": 207,
 
-	  "eyeColor": "black",
+"eyeColor": "black",
 
-	  "occupation": "nurse",
+"occupation": "nurse",
 
-	  "parents": [],
+"parents": [],
 
-	  "currentSpouse": 464142841
+"currentSpouse": 464142841
 
 	},
 
@@ -134,25 +123,25 @@ var data = [
 
 		"id": 464142841,
 
-	  "firstName": "Jen",
+"firstName": "Jen",
 
-	  "lastName": "Pafoy",
+"lastName": "Pafoy",
 
-	  "gender": "female",
+"gender": "female",
 
-	  "dob": "4/10/1940",
+"dob": "4/10/1940",
 
-	  "height": 72,
+"height": 72,
 
-	  "weight": 256,
+"weight": 256,
 
-	  "eyeColor": "black",
+"eyeColor": "black",
 
-	  "occupation": "student",
+"occupation": "student",
 
-	  "parents": [],
+"parents": [],
 
-	  "currentSpouse": 629807187
+"currentSpouse": 629807187
 
 	},
 
@@ -160,25 +149,24 @@ var data = [
 
 		"id": 982411429,
 
-	  "firstName": "Mister",
+"firstName": "Mister",
 
-	  "lastName": "Potatoo",
+"lastName": "Potatoo",
 
-	  "gender": "male",
+"gender": "male",
+"dob": "12/18/1952",
 
-	  "dob": "12/18/1952",
+"height": 66,
 
-	  "height": 66,
+"weight": 170,
 
-	  "weight": 170,
+"eyeColor": "hazel",
 
-	  "eyeColor": "hazel",
+"occupation": "architect",
 
-	  "occupation": "architect",
+"parents": [],
 
-	  "parents": [],
-
-	  "currentSpouse": 595767575
+"currentSpouse": 595767575
 
 	},
 
@@ -186,25 +174,25 @@ var data = [
 
 		"id": 595767575,
 
-	  "firstName": "Missuz",
+"firstName": "Missuz",
 
-	  "lastName": "Potatoo",
+"lastName": "Potatoo",
 
-	  "gender": "female",
+"gender": "female",
 
-	  "dob": "10/28/1948",
+"dob": "10/28/1948",
 
-	  "height": 59,
+"height": 59,
 
-	  "weight": 137,
+"weight": 137,
 
-	  "eyeColor": "blue",
+"eyeColor": "blue",
 
-	  "occupation": "architect",
+"occupation": "architect",
 
-	  "parents": [],
+"parents": [],
 
-	  "currentSpouse": 982411429
+"currentSpouse": 982411429
 
 	},
 
@@ -212,25 +200,24 @@ var data = [
 
 		"id": 693243224,
 
-	  "firstName": "Joy",
+"firstName": "Joy",
 
-	  "lastName": "Madden",
+"lastName": "Madden",
 
-	  "gender": "female",
+"gender": "female",
 
-	  "dob": "4/20/1939",
+"dob": "4/20/1939",
+"height": 69,
 
-	  "height": 69,
+"weight": 199,
 
-	  "weight": 199,
+"eyeColor": "hazel",
 
-	  "eyeColor": "hazel",
+"occupation": "doctor",
 
-	  "occupation": "doctor",
+"parents": [],
 
-	  "parents": [],
-
-	  "currentSpouse": null
+"currentSpouse": null
 
 	},
 
@@ -238,25 +225,25 @@ var data = [
 
 		"id": 888201200,
 
-	  "firstName": "Mader",
+"firstName": "Mader",
 
-	  "lastName": "Madden",
+"lastName": "Madden",
 
-	  "gender": "male",
+"gender": "male",
 
-	  "dob": "5/6/1937",
+"dob": "5/6/1937",
 
-	  "height": 76,
+"height": 76,
 
-	  "weight": 205,
+"weight": 205,
 
-	  "eyeColor": "black",
+"eyeColor": "black",
 
-	  "occupation": "landscaper",
+"occupation": "landscaper",
 
-	  "parents": [],
+"parents": [],
 
-	  "currentSpouse": null
+"currentSpouse": null
 
 	},
 
@@ -264,25 +251,25 @@ var data = [
 
 		"id": 878013758,
 
-	  "firstName": "Jill",
+"firstName": "Jill",
 
-	  "lastName": "Pafoy",
+"lastName": "Pafoy",
 
-	  "gender": "Bob",
+"gender": "Bob",
 
-	  "dob": "2/8/1972",
+"dob": "2/8/1972",
 
-	  "height": 74,
+"height": 74,
 
-	  "weight": 118,
+"weight": 118,
 
-	  "eyeColor": "brown",
+"eyeColor": "brown",
 
-	  "occupation": "programmer",
+"occupation": "programmer",
 
-	  "parents": [401222887],
+"parents": [401222887],
 
-	  "currentSpouse": 294874671
+"currentSpouse": `294874671`
 
 	},
 
@@ -290,25 +277,25 @@ var data = [
 
 		"id": 951747547,
 
-	  "firstName": "Ralph",
+"firstName": "Ralph",
 
-	  "lastName": "Bob",
+"lastName": "Bob",
 
-	  "gender": "male",
+"gender": "male",
 
-	  "dob": "12/23/1969",
+"dob": "12/23/1969",
 
-	  "height": 66,
+"height": 66,
 
-	  "weight": 179,
+"weight": 179,
 
-	  "eyeColor": "blue",
+"eyeColor": "blue",
 
-	  "occupation": "nurse",
+"occupation": "nurse",
 
-	  "parents": [401222887],
+"parents": [401222887],
 
-	  "currentSpouse": 159819275
+"currentSpouse": 159819275
 
 	},
 
@@ -316,25 +303,25 @@ var data = [
 
 		"id": 159819275,
 
-	  "firstName": "Jasmine",
+"firstName": "Jasmine",
 
-	  "lastName": "Bob",
+"lastName": "Bob",
 
-	  "gender": "female",
+"gender": "female",
 
-	  "dob": "12/18/1969",
+"dob": "12/18/1969",
 
-	  "height": 58,
+"height": 58,
 
-	  "weight": 156,
+"weight": 156,
 
-	  "eyeColor": "blue",
+"eyeColor": "blue",
 
-	  "occupation": "assistant",
+"occupation": "assistant",
 
-	  "parents": [409574486,260451248],
+"parents": [409574486,260451248],
 
-	  "currentSpouse": 951747547
+"currentSpouse": 951747547
 
 	},
 
@@ -342,25 +329,24 @@ var data = [
 
 		"id": 348457184,
 
-	  "firstName": "Annie",
+"firstName": "Annie",
 
-	  "lastName": "Pafoy",
+"lastName": "Pafoy",
 
-	  "gender": "female",
+"gender": "female",
 
-	  "dob": "11/4/1970",
+"dob": "11/4/1970",
+"height": 62,
 
-	  "height": 62,
+"weight": 235,
 
-	  "weight": 235,
+"eyeColor": "hazel",
 
-	  "eyeColor": "hazel",
+"occupation": "landscaper",
 
-	  "occupation": "landscaper",
+"parents": [629807187,464142841],
 
-	  "parents": [629807187,464142841],
-
-	  "currentSpouse": null
+"currentSpouse": null
 
 	},
 
@@ -368,25 +354,25 @@ var data = [
 
 		"id": 294874671,
 
-	  "firstName": "Dave",
+"firstName": "Dave",
 
-	  "lastName": "Pafoy",
+"lastName": "Pafoy",
 
-	  "gender": "male",
+"gender": "male",
 
-	  "dob": "8/5/1967",
+"dob": "8/5/1967",
 
-	  "height": 61,
+"height": 61,
 
-	  "weight": 112,
+"weight": 112,
 
-	  "eyeColor": "green",
+"eyeColor": "green",
 
-	  "occupation": "doctor",
+"occupation": "doctor",
 
-	  "parents": [629807187,464142841],
+"parents": [629807187,464142841],
 
-	  "currentSpouse": 878013758
+"currentSpouse": 878013758
 
 	},
 
@@ -394,25 +380,25 @@ var data = [
 
 		"id": 931247228,
 
-	  "firstName": "Amii",
+"firstName": "Amii",
 
-	  "lastName": "Pafoy",
+"lastName": "Pafoy",
 
-	  "gender": "female",
+"gender": "female",
 
-	  "dob": "3/13/1963",
+"dob": "3/13/1963",
 
-	  "height": 74,
+"height": 74,
 
-	  "weight": 184,
+"weight": 184,
 
-	  "eyeColor": "brown",
+"eyeColor": "brown",
 
-	  "occupation": "landscaper",
+"occupation": "landscaper",
 
-	  "parents": [629807187,464142841],
+"parents": [629807187,464142841],
 
-	  "currentSpouse": null
+"currentSpouse": null
 
 	},
 
@@ -420,25 +406,25 @@ var data = [
 
 		"id": 822843554,
 
-	  "firstName": "Regina",
+"firstName": "Regina",
 
-	  "lastName": "Madden",
+"lastName": "Madden",
 
-	  "gender": "female",
+"gender": "female",
 
-	  "dob": "7/26/1959",
+"dob": "7/26/1959",
 
-	  "height": 71,
+"height": 71,
 
-	  "weight": 249,
+"weight": 249,
 
-	  "eyeColor": "brown",
+"eyeColor": "brown",
 
-	  "occupation": "nurse",
+"occupation": "nurse",
 
-	  "parents": [693243224, 888201200],
+"parents": [693243224, 888201200],
 
-	  "currentSpouse": null
+"currentSpouse": null
 
 	},
 
@@ -446,25 +432,25 @@ var data = [
 
 		"id": 819168108,
 
-	  "firstName": "Hana",
+"firstName": "Hana",
 
-	  "lastName": "Madden",
+"lastName": "Madden",
 
-	  "gender": "female",
+"gender": "female",
 
-	  "dob": "10/7/1953",
+"dob": "10/7/1953",
 
-	  "height": 70,
+"height": 70,
 
-	  "weight": 187,
+"weight": 187,
 
-	  "eyeColor": "brown",
+"eyeColor": "brown",
 
-	  "occupation": "politician",
+"occupation": "politician",
 
-	  "parents": [693243224, 888201200],
+"parents": [693243224, 888201200],
 
-	  "currentSpouse": null
+"currentSpouse": null
 
 	},
 
@@ -472,25 +458,25 @@ var data = [
 
 		"id": 969837479,
 
-	  "firstName": "Eloise",
+"firstName": "Eloise",
 
-	  "lastName": "Madden",
+"lastName": "Madden",
 
-	  "gender": "female",
+"gender": "female",
 
-	  "dob": "12/11/1961",
+"dob": "12/11/1961",
 
-	  "height": 63,
+"height": 63,
 
-	  "weight": 241,
+"weight": 241,
 
-	  "eyeColor": "brown",
+"eyeColor": "brown",
 
-	  "occupation": "assistant",
+"occupation": "assistant",
 
-	  "parents": [693243224, 888201200],
+"parents": [693243224, 888201200],
 
-	  "currentSpouse": null
+"currentSpouse": null
 
 	},
 
@@ -498,25 +484,25 @@ var data = [
 
 		"id": 313207561,
 
-	  "firstName": "Mattias",
+"firstName": "Mattias",
 
-	  "lastName": "Madden",
+"lastName": "Madden",
 
-	  "gender": "male",
+"gender": "male",
 
-	  "dob": "2/19/1966",
+"dob": "2/19/1966",
 
-	  "height": 70,
+"height": 70,
 
-	  "weight": 110,
+"weight": 110,
 
-	  "eyeColor": "blue",
+"eyeColor": "blue",
 
-	  "occupation": "assistant",
+"occupation": "assistant",
 
-	  "parents": [693243224, 888201200],
+"parents": [693243224, 888201200],
 
-	  "currentSpouse": 313997561
+"currentSpouse": 313997561
 
 	},
 
@@ -524,25 +510,25 @@ var data = [
 
 		"id": 313997561,
 
-	  "firstName": "Ellen",
+"firstName": "Ellen",
 
-	  "lastName": "Madden",
+"lastName": "Madden",
 
-	  "gender": "female",
+"gender": "female",
 
-	  "dob": "2/19/1970",
+"dob": "2/19/1970",
 
-	  "height": 67,
+"height": 67,
 
-	  "weight": 100,
+"weight": 100,
 
-	  "eyeColor": "blue",
+"eyeColor": "blue",
 
-	  "occupation": "doctor",
+"occupation": "doctor",
 
-	  "parents": [],
+"parents": [],
 
-	  "currentSpouse": 313207561
+"currentSpouse": 313207561
 
 	},
 
@@ -550,25 +536,25 @@ var data = [
 
 		"id": 313998000,
 
-	  "firstName": "Joey",
+"firstName": "Joey",
 
-	  "lastName": "Madden",
+"lastName": "Madden",
 
-	  "gender": "female",
+"gender": "female",
 
-	  "dob": "2/02/1987",
+"dob": "2/02/1987",
 
-	  "height": 67,
+"height": 67,
 
-	  "weight": 100,
+"weight": 100,
 
-	  "eyeColor": "blue",
+"eyeColor": "blue",
 
-	  "occupation": "doctor",
+"occupation": "doctor",
 
-	  "parents": [313207561,313997561],
+"parents": [313207561,313997561],
 
-	  "currentSpouse": null
+"currentSpouse": null
 
 	}
 
