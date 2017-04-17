@@ -35,13 +35,17 @@ return people.filter(function(person)
   }
 
 function pickPerson(filteredList){
-     var criteriaFilter="";
-     for (var i=0; i < filteredList.length; i++){
-         criteriaFilter += (" Person: "+filteredList[i].firstName+ " " +filteredList[i].lastName);
-     }
-     alert(criteriaFilter);
-     return filteredList[0];
-  }
+  var message="";
+for (var i=0; i < filteredList.length; i++){
+ message += (i +" Name: "+filteredList[i].firstName+ " " +filteredList[i].lastName);
+}
+ alert(message);
+ var choosePerson = prompt("Type the number of the person you would like to know more about? If none exists press enter.");
+ if(!choosePerson){
+   alert("Search criteria does not match the database.");
+ }
+return filteredList[choosePerson];
+}
 
 
 function mainMenu(person, people) {
@@ -83,35 +87,23 @@ function mainMenu(person, people) {
 
 			alert("There was an error processing your request.");
 
-			return mainMenu(person, people);
+      return mainMenu(person, people);
 
     }
-
 }
+
 function getDescendants(person, people){
-
 	var descendants = [];
-
 	var id = person.id;
-
-	for(var i=0; i<data.length; i++){
-
+	for(var i = 0; i< data.length; i++){
 		var persons = data[i];
-
 		if(person.parents.indexOf(parseInt(id))>-1){
-
 			descendants.push(person);
-
 			var foundDescendants = GetDecendants(person,people);
-
 			if(foundDescendants){
-
 				descendants = descendants.concat(foundDescendants);
-
-			}
-
+      }
 		}
-
 	}
 	if(descendants.length === 0){
 		return false;
